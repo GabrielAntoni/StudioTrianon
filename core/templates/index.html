@@ -1,0 +1,48 @@
+{% extends 'partes/base.html' %}
+{% load static%}
+{% block content %}
+  <!-- Hero 2 - Bootstrap Brain Component -->
+ {% include 'partes/hero.html'%}
+
+  <!-- Main -->
+  <main id="main">
+    <!-- Section - Services -->
+    <!-- Service 3 - Bootstrap Brain Component -->
+    {% include 'partes/servicos.html' %}
+
+
+
+    <!-- Call To Action 1 - Bootstrap Brain Component -->
+    {% include 'partes/joinus.html' %}
+
+
+    <!-- Section - Portfolio -->
+    <!-- Project 2 - Bootstrap Brain Component -->
+    {% include 'partes/portfolio.html' %}
+
+
+    <!-- Section - About -->
+    {% include 'partes/about.html' %}
+
+
+    <!-- Section - Team -->
+    {% include 'partes/team.html' %}
+
+    <!-- Section - Pricing -->
+    {% include 'partes/pricing.html' %}
+
+    <!-- Section - Testimonial -->
+    {% include 'partes/testimonial.html' %}
+
+    <!-- Section - Blog -->
+    {% include 'partes/blog.html' %}
+
+    <!-- Section - Contact -->
+    {% include 'partes/contact.html' %}
+
+  </main>
+
+  <!-- Footer 2 - Bootstrap Brain Component -->
+{% include 'partes/footer.html' %}
+
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'partes/base.html' %}
+{% load static%}
+{% block content %}
+  <section id="scrollspyHero" class="bsb-hero-2 bsb-tpl-bg-blue py-5 py-xl-8 py-xxl-10">
+    <div class="container overflow-hidden">
+      <div class="row gy-3 gy-lg-0 align-items-lg-center justify-content-lg-between">
+        <div class="col-12 col-lg-6 order-1 order-lg-0">
+          <h1 class="display-3 fw-bolder mb-3">Erro 404</h1>
+          <p class="fs-4 mb-5">pagina não encontrada</p>
+          <div class="d-grid gap-2 d-sm-flex">
+            <a href="{% url 'index' %}"><button  type="button" class="btn btn-primary bsb-btn-3xl rounded-pill" href="{% url 'index' %}" >voltar para tela inicial</button></a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-5 text-center">
+          <img class="img-fluid" loading="lazy" src="{% static 'images/hero/hero-home.jpg' %}" alt="" style="-webkit-mask-image: url({% static 'images/hero/hero-blob-1.svg' %}); mask-image: url({% static 'images/hero/hero-blob-1.svg' %});">
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
